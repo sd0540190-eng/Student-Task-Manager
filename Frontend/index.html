@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Website Heading -->
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Manage your college tasks easily</p>
+        </header>
+
+
+        <!-- Add Task Section -->
+        <section class="task-form">
+
+            <h2>Add New Task</h2>
+
+            <form>
+
+                <!-- Task Name -->
+                <label for="taskName">Task Name</label>
+                <input
+                    type="text"
+                    id="taskName"
+                    placeholder="Enter your task"
+                >
+
+
+                <!-- Deadline -->
+                <label for="deadline">Deadline</label>
+                <input
+                    type="date"
+                    id="deadline"
+                >
+
+
+                <!-- Priority -->
+                <label for="priority">Priority</label>
+
+                <select id="priority">
+
+                    <option value="low">Low</option>
+
+                    <option value="medium">Medium</option>
+
+                    <option value="high">High</option>
+
+                </select>
+
+
+                <!-- Add Button -->
+                <button type="submit">Add Task</button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Task List Section -->
+        <section class="task-list">
+
+            <h2>My Tasks</h2>
+
+            <!-- Example Task -->
+            <div class="task">
+
+                <div>
+                    <h3>Complete DBMS Assignment</h3>
+
+                    <p>Deadline: 10 October 2026</p>
+
+                    <span>High Priority</span>
+                </div>
+
+                <div class="task-buttons">
+
+                    <button type="button">Complete</button>
+
+                    <button type="button">Delete</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Example Task -->
+            <div class="task">
+
+                <div>
+                    <h3>Practice Java</h3>
+
+                    <p>Deadline: 8 October 2026</p>
+
+                    <span>Medium Priority</span>
+                </div>
+
+                <div class="task-buttons">
+
+                    <button type="button">Complete</button>
+
+                    <button type="button">Delete</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
