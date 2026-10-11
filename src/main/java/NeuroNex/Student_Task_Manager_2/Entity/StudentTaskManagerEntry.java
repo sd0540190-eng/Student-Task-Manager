@@ -1,3 +1,4 @@
+
 package NeuroNex.Student_Task_Manager_2.Entity;
 
 import org.springframework.data.annotation.Id;
@@ -8,6 +9,9 @@ public class StudentTaskManagerEntry {
 
     @Id
     private String id;
+
+    // Username of the student who owns this task
+    private String username;
 
     private String title;
     private String deadline;
@@ -38,6 +42,15 @@ public class StudentTaskManagerEntry {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    // Username
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     // Title
@@ -76,5 +89,4 @@ public class StudentTaskManagerEntry {
         this.completed = completed;
     }
 }
-
 
